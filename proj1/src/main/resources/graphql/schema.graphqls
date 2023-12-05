@@ -1,0 +1,43 @@
+# ! not nullable
+
+type Book {
+    id : Int!
+    bookName: String!
+    authors : [Author]!
+}
+
+type Author {
+    id : Int!
+    name : String!
+}
+
+input AuthorInput {
+    bookName : String!
+    id : [Int]!
+}
+
+
+type Shop{
+    id : Int!
+    books: [Book]!
+    quantity: Int!
+    price : Float!
+}
+
+
+type Query
+{
+    allBooks : [Book]
+    allShops : [Shop]
+    allAuthors : [Author]
+    authorById (id: ID!) : Author
+    bookById (id : ID!) : Book
+    shoById (id : ID!) : Shop
+}
+
+type Mutation {
+    newAuthor(name : String!) : Author
+    newBook(authorInput: AuthorInput) : Book
+}
+
+
