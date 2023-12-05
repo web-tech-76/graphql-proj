@@ -5,15 +5,15 @@
 package proj1.web;
 
 
-import graphql.app.entities.Author;
-import graphql.app.entities.Book;
-import graphql.app.graphql.params.AuthorInput;
-import graphql.app.services.AuthorService;
-import graphql.app.services.BookService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
+import proj1.entities.Author;
+import proj1.entities.Book;
+import proj1.params.AuthorInput;
+import proj1.services.AuthorService;
+import proj1.services.BookService;
 
 import java.util.ArrayList;
 import java.util.List;

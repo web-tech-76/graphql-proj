@@ -4,8 +4,8 @@
 
 package proj1.repositories;
 
-import graphql.app.entities.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
+import proj1.entities.Author;
 
 public interface AuthorRepository extends JpaRepository<Author, Integer> {
 }

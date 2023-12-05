@@ -4,9 +4,9 @@
 
 package proj1.services;
 
-import graphql.app.entities.Shop;
-import graphql.app.repositories.ShopRepository;
 import org.springframework.stereotype.Component;
+import proj1.entities.Shop;
+import proj1.repositories.ShopRepository;
 
 @Component
 public class ShopService {

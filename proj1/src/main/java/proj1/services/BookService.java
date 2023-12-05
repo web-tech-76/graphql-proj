@@ -4,9 +4,9 @@
 
 package proj1.services;
 
-import graphql.app.entities.Book;
-import graphql.app.repositories.BookRepository;
 import org.springframework.stereotype.Component;
+import proj1.entities.Book;
+import proj1.repositories.BookRepository;
 
 import java.util.Iterator;
 import java.util.LinkedList;

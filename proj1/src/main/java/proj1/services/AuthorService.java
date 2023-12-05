@@ -4,9 +4,9 @@
 
 package proj1.services;
 
-import graphql.app.entities.Author;
-import graphql.app.repositories.AuthorRepository;
 import org.springframework.stereotype.Service;
+import proj1.entities.Author;
+import proj1.repositories.AuthorRepository;
 
 import java.util.List;
 
